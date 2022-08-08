@@ -1,0 +1,258 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="favicon.ico" type="img/x-icon">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>The Rock</title>
+ </head>
+ <body>
+	<div id="main">
+		 <div id="header">
+			<ul id="nav">
+				<li><a href="#">Home</a></li>
+				<li><a href="#band">Band</a></li>
+				<li><a href="#tour">Tour</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li class="merch-btn"><a href="#">Merch</a></li>
+				<li class="more-btn">
+					<a>More <i class="fa fa-caret-down"></i></a>
+					<ul class="subnav">
+						<li><a href="#">Merchandise</a></li>
+						<li><a href="#">Extras</a></li>
+						<li><a href="#">Media</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="search-icon">
+				<i class="fa fa-search"></i>
+			</div>
+			<div class="nav-bars">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+		 </div>
+
+		 <div id="slider">
+			<div class="text-slider">
+				<h3 class="text-header">Chicago</h3>
+				<p class="text-des">Thank you, Chicago - A night we won't forget.</p>
+			</div>
+		 </div>
+
+		 <div id="content">
+			<!-- About section -->
+			<div id="band" class="content-section">
+				<h2 class="section-heading">THE BAND</h2>
+				<p class="section-sub-heading">We love music</p>
+				<p class="about-text">
+					We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+				<div class="bandmember">
+					<div class="member">
+						<p>Name</p>
+						<img src="./assets/img/bandmember.jpg" alt="bandmember">
+					</div>
+					<div class="member">
+						<p>Name</p>
+						<img src="./assets/img/bandmember.jpg" alt="bandmember">
+					</div>
+					<div class="member">
+						<p>Name</p>
+						<img src="./assets/img/bandmember.jpg" alt="bandmember">
+					</div>
+				</div>
+			</div>
+
+			<!-- Tour section -->
+			<div id="tour" class="tour-section">
+				<div class="content-section">
+					<h2 class="section-heading">TOUR DATES</h2>
+					<p class="section-sub-heading">Remember to book your tickets!</p>
+					<ul class="ticket-list">
+						<li>
+							September
+							<span>Sold out</span>
+						</li>
+						<li>
+							October
+							<span>Sold out</span>
+						</li>
+						<li>
+							November
+							<span>3</span>
+						</li>
+					</ul>
+					<div class="row buy-ticket">
+						<div class="ticket-item">
+							<img src="./assets/img/tour-ticket/newyork.jpg" alt="New York" >
+							<div class="ticket-content ">
+							  <p><b>New York</b></p>
+							  <p class="date">Fri 27 Nov 2016</p>
+							  <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+							  <button class="buy-btn js-buy-ticket" >Buy Tickets</button>
+							</div>
+						</div>
+						<div class="ticket-item">
+							<img src="./assets/img/tour-ticket/paris.jpg" alt="Paris" >
+							<div class="ticket-content">
+							  <p><b>Paris</b></p>
+							  <p class="date">Sat 28 Nov 2016</p>
+							  <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+							  <button class="buy-btn js-buy-ticket" >Buy Tickets</button>
+							</div>
+						</div>
+						<div class="ticket-item">
+							<img src="./assets/img/tour-ticket/sanfran.jpg" alt="San Francisco" >
+							<div class="ticket-content">
+							  <p><b>San Francisco</b></p>
+							  <p class="date">Sun 29 Nov 2016</p>
+							  <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+							  <button class="buy-btn js-buy-ticket" >Buy Tickets</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Ticket Modal -->
+			<div class="ticket-modal js-ticket-modal">
+				<div class="modal-content js-modal-content">
+					<h2 class="modal-header">
+						<i class="fa fa-suitcase w3-margin-right"></i>
+						Tickets
+						<span class="close-icon js-close">×</span>
+					</h2>
+					<div class="modal-body">
+						<p class="title">
+							<i class="fa fa-shopping-cart"></i> 
+							Tickets, $15 per person
+						</p>
+						<input class="input" type="number" placeholder="How many?">
+						<p class="title">
+							<i class="fa fa-user"></i> 
+							Send To
+						</p>
+						<input class="input" type="email" placeholder="Enter email">
+						<button class="submit">
+							PAY 
+							<i class="fa fa-check"></i>
+						</button>
+						<button class="close-btn js-close">
+							Close 
+							<i class="fa fa-remove"></i>
+						</button>
+						<a class="help-btn" href="">Need help?</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Contact section -->
+			<div id="contact" class="content-section">
+				<h2 class="section-heading">CONTACT</h2>
+				<p class="section-sub-heading">Fan? Drop a note!</p>
+				<div class="contact-content">
+					<div class="contact-info">
+						<i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+						<i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+						<i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+					  </div>
+					  <div class="feed-back">
+							<form>
+							  <div class="info">
+								  <input type="text" placeholder="Name" required name="Name">
+								  <input type="email" placeholder="Email" required name="Email">
+							  </div>
+							  <div class="send-message">
+							  	<input class="message" type="text" placeholder="Message" required name="Message">
+								<button class="send-btn" type="submit">SEND</button>
+							  </div>
+							</form>
+					  </div>
+				</div>
+			</div>
+
+			<!-- Map section -->
+			<img class="map-section" src="./assets/img/map.jpg" alt="location">
+			
+		 </div>
+
+		 <footer>
+			<i class="fa fa-facebook-official w3-hover-opacity"></i>
+			<i class="fa fa-instagram w3-hover-opacity"></i>
+			<i class="fa fa-snapchat w3-hover-opacity"></i>
+			<i class="fa fa-pinterest-p w3-hover-opacity"></i>
+			<i class="fa fa-twitter w3-hover-opacity"></i>
+			<i class="fa fa-linkedin w3-hover-opacity"></i>
+			<p class="copyright">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+		  </footer>
+
+	</div>
+	<script>
+		const buyBtns = document.querySelectorAll('.js-buy-ticket')
+		const modal = document.querySelector('.js-ticket-modal')
+		// const modalContent = document.querySelector('.js-modal-content')
+		const closeBtns = document.querySelectorAll('.js-close')
+
+		const handleShowBuyTickets = () => modal.classList.add('open')
+		const handleHideBuyTickets = () => modal.classList.remove('open')
+
+
+
+		for (const buyBtn of buyBtns) {
+			buyBtn.addEventListener('click', handleShowBuyTickets)
+		}
+
+		for (const closeBtn of closeBtns) {
+			closeBtn.addEventListener('click', handleHideBuyTickets)
+		}
+
+		// modal.addEventListener('click', handleHideBuyTickets)
+
+		// stopPropagation
+		// modalContent.addEventListener('click', (e) => e.stopPropagation())
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		if (event.target === modal) {
+			handleHideBuyTickets()
+		}
+		}
+
+
+		// Used to toggle the menu on small screens when clicking on the menu button
+		const barBtn = document.querySelector('.nav-bars')
+		const header = document.getElementById('header')
+		
+		const headerHeight = header.style.height
+
+		barBtn.addEventListener('click', () => {
+			if (header.style.height == headerHeight) {
+				header.style.height = 'auto'
+			} else {
+				header.style.height = null
+			}
+		})
+
+		// Auto close menu when click to navigation item
+		const menuItems = document.querySelectorAll('#nav li a')
+		const subMenu = document.querySelector('.subnav')
+
+
+		for (const menuItem of menuItems){ 
+			const isParentMenu = menuItem.nextElementSibling
+			if (!isParentMenu) {
+				menuItem.onclick = function (e) {
+					header.style.height = null
+				}
+			}
+				
+
+		}
+
+
+	</script>
+ </body>
+ </html>
